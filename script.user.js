@@ -7,6 +7,8 @@
 // @match        https://milkonomy.pages.dev/*
 // @grant        none
 // @run-at       document-end
+// @downloadURL https://raw.githubusercontent.com/CYR2077/MWI-milkonomyTool/main/script.user.js
+// @updateURL https://raw.githubusercontent.com/CYR2077/MWI-milkonomyTool/main/script.user.js
 // ==/UserScript==
 
 (function () {
@@ -159,8 +161,8 @@
         const resultHTML = `
             <div id="result-section">
                 <div style="display: flex; margin-bottom: 10px;">
-                    <button id="tab-hourly" class="tab-btn" style="flex: 1; padding: 8px; background: #409eff; color: #fff; border: none; border-radius: 4px 0 0 4px; cursor: pointer; font-size: 12px;">按工时费排序</button>
-                    <button id="tab-profit" class="tab-btn" style="flex: 1; padding: 8px; background: #404040; color: #ccc; border: none; border-radius: 0 4px 4px 0; cursor: pointer; font-size: 12px;">按单件利润排序</button>
+                    <button id="tab-hourly" class="tab-btn" style="flex: 1; padding: 8px; background: #409eff; color: #fff; border: none; border-radius: 4px 0 0 4px; cursor: pointer; font-size: 12px;">按最高工时费排序</button>
+                    <button id="tab-profit" class="tab-btn" style="flex: 1; padding: 8px; background: #404040; color: #ccc; border: none; border-radius: 0 4px 4px 0; cursor: pointer; font-size: 12px;">按单件利润最高时工时费排序</button>
                 </div>
                 <div style="max-height: 400px; overflow-y: auto;">
                     <div id="table-content">${createSortedTable(data, 'maxHourlyRate')}</div>
